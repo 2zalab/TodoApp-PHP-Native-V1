@@ -22,3 +22,13 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+# Capacitor
+android/app/build/
+android/app/.cxx/
+android/.gradle/
+android/build/
+android/gradle/
+android/local.properties
+*.keystore
+key.properties
