@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background -->
+  <rect width="512" height="512" rx="90" fill="#4a90e2"/>
+
+  <!-- Clipboard -->
+  <rect x="120" y="100" width="272" height="340" rx="20" fill="#ffffff"/>
+  <rect x="180" y="70" width="152" height="60" rx="15" fill="#ffffff"/>
+  <rect x="190" y="80" width="132" height="40" rx="10" fill="#e8f4fd"/>
+
+  <!-- Checkmarks -->
+  <g fill="none" stroke="#4a90e2" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Line 1 -->
+    <line x1="160" y1="180" x2="180" y2="180"/>
+    <line x1="220" y1="180" x2="350" y2="180"/>
+
+    <!-- Line 2 with check -->
+    <polyline points="160,240 175,255 195,230"/>
+    <line x1="220" y1="240" x2="350" y2="240" stroke="#999"/>
+
+    <!-- Line 3 -->
+    <line x1="160" y1="300" x2="180" y2="300"/>
+    <line x1="220" y1="300" x2="350" y2="300"/>
+
+    <!-- Line 4 with check -->
+    <polyline points="160,360 175,375 195,350"/>
+    <line x1="220" y1="360" x2="350" y2="360" stroke="#999"/>
+  </g>
+
+  <!-- Emoji style checkbox -->
+  <text x="256" y="460" font-size="60" text-anchor="middle" fill="#4a90e2">✓</text>
+</svg>

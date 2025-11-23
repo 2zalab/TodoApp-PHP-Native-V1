@@ -7,13 +7,28 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>TodoList Mobile - Laravel</title>
+
+    <!-- PWA Meta Tags -->
+    <meta name="description" content="Application de gestion de tÃ¢ches mobile - TodoList">
+    <meta name="theme-color" content="#4a90e2">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="TodoList">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="{{ asset('manifest.json') }}">
+
+    <!-- PWA Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('icons/icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="512x512" href="{{ asset('icons/icon-512x512.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('icons/icon-192x192.png') }}">
+
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body>
     <div class="container">
         <!-- Header -->
         <header class="header">
-            <h1>=Ý TodoList Mobile</h1>
+            <h1>=ï¿½ TodoList Mobile</h1>
             <div class="stats" id="stats">
                 <span class="stat">
                     <strong id="totalTodos">0</strong>
@@ -21,7 +36,7 @@
                 </span>
                 <span class="stat">
                     <strong id="completedTodos">0</strong>
-                    <small>Terminées</small>
+                    <small>Terminï¿½es</small>
                 </span>
                 <span class="stat">
                     <strong id="pendingTodos">0</strong>
@@ -36,7 +51,7 @@
                 <input
                     type="text"
                     id="todoTitle"
-                    placeholder="Titre de la tâche..."
+                    placeholder="Titre de la tï¿½che..."
                     required
                     autocomplete="off"
                 >
@@ -46,7 +61,7 @@
                     rows="2"
                 ></textarea>
                 <button type="submit" class="btn btn-primary">
-                    • Ajouter
+                    ï¿½ Ajouter
                 </button>
             </form>
         </div>
@@ -60,7 +75,7 @@
                 En cours
             </button>
             <button class="filter-btn" data-filter="completed">
-                Terminées
+                Terminï¿½es
             </button>
         </div>
 
@@ -71,9 +86,9 @@
                 <p>Chargement...</p>
             </div>
             <div class="empty-state" id="emptyState" style="display: none;">
-                <div class="empty-icon">=Ë</div>
-                <h3>Aucune tâche</h3>
-                <p>Ajoutez votre première tâche pour commencer!</p>
+                <div class="empty-icon">=ï¿½</div>
+                <h3>Aucune tï¿½che</h3>
+                <p>Ajoutez votre premiï¿½re tï¿½che pour commencer!</p>
             </div>
             <ul class="todos-list" id="todosList"></ul>
         </div>
