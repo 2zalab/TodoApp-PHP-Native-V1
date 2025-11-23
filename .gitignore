@@ -1,0 +1,20 @@
+# Fichiers de données
+data/todos.json
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+error_log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Cache
+*.cache
